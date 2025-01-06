@@ -1,0 +1,26 @@
+Dom : document object moduel
+
+
+addEventListener() - Summary
+addEventListener() is a method in JavaScript used to attach event handlers to HTML elements. It allows you to specify what happens when a specific event (like a click, mouseover, keydown, etc.) occurs on an element.
+
+
+
+
+
+- **`getElementById()`**: Use it when selecting an element by its unique `id`. It’s fast and returns only one element.
+
+- **`querySelector()`**: Use it when you need to select an element with any valid CSS selector (e.g., class, tag, or attribute). It returns the first match and is more flexible.selects the **first** element that matches a given CSS selector.
+
+
+**querySelectorAll**:
+- `querySelectorAll()` selects **all** elements that match a given CSS selector.
+- It returns a **NodeList** containing all matching elements.
+
+### **NodeList**:
+- A **NodeList** is a collection of DOM elements (like `<div>`, `<p>`, etc.) returned by methods such as `querySelectorAll()`.
+- It behaves like an array, but it's not exactly the same.
+- You can access elements in a NodeList by index and loop through it.
+- It is returned by **querySelectorAll()** and other methods like `childNodes`.
+
+

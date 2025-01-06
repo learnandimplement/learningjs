@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="parent" style="border: 1px solid red;">
+        <p style="border: 1px solid blue;">Child 1</p>
+        <p style="border: 1px solid yellow;">Child 2</p>
+      </div>
+      
+      <script>
+        // Using mouseover
+        document.querySelector("#parent").addEventListener("mouseover", function() {
+          console.log("mouseover: Mouse entered parent or its child.");
+        });
+      
+        // Using mouseout
+        document.querySelector("#parent").addEventListener("mouseout", function() {
+          console.log("mouseout: Mouse left parent or its child.");
+        });
+      
+        // Using mouseenter
+        document.querySelector("#parent").addEventListener("mouseenter", function() {
+          console.log("mouseenter: Mouse entered only parent.");
+        });
+      
+        // Using mouseleave
+        document.querySelector("#parent").addEventListener("mouseleave", function() {
+          console.log("mouseleave: Mouse left only parent.");
+        });
+      </script>
+
+
+<!-- The events `mouseover`, `mouseenter`, `mouseout`, and `mouseleave` are all related to mouse interactions with HTML elements, but they differ in how they behave:
+
+### 1. **Mouseover**:
+- Triggered when the mouse pointer moves over an element or any of its child elements.
+- This event will fire multiple times if the mouse moves over child elements within the parent, because it is triggered by both the target element and its children.
+
+### 2. **Mouseenter**:
+- Triggered when the mouse pointer enters an element (not including its child elements).
+- Unlike `mouseover`, it only fires once when entering the element itself, not repeatedly for child elements.
+
+### 3. **Mouseout**:
+- Triggered when the mouse pointer leaves an element or any of its child elements.
+- Like `mouseover`, this event will fire multiple times if the mouse moves out of a parent element to its children, or vice versa.
+
+### 4. **Mouseleave**:
+- Triggered when the mouse pointer leaves an element (not including its child elements).
+- Similar to `mouseenter`, it only fires once when leaving the element itself, not repeatedly for child elements.
+
+### Summary of Differences:
+- **`mouseover` vs `mouseenter`**: `mouseover` can fire multiple times for child elements, while `mouseenter` only fires once when entering the element.
+- **`mouseout` vs `mouseleave`**: `mouseout` can fire multiple times for child elements, while `mouseleave` only fires once when leaving the element. -->
+      
+
+
+
+
+</body>
+</html>
