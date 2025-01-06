@@ -5,9 +5,6 @@ addEventListener() - Summary
 addEventListener() is a method in JavaScript used to attach event handlers to HTML elements. It allows you to specify what happens when a specific event (like a click, mouseover, keydown, etc.) occurs on an element.
 
 
-
-
-
 - **`getElementById()`**: Use it when selecting an element by its unique `id`. It’s fast and returns only one element.
 
 - **`querySelector()`**: Use it when you need to select an element with any valid CSS selector (e.g., class, tag, or attribute). It returns the first match and is more flexible.selects the **first** element that matches a given CSS selector.
@@ -24,3 +21,19 @@ addEventListener() is a method in JavaScript used to attach event handlers to HT
 - It is returned by **querySelectorAll()** and other methods like `childNodes`.
 
 
+addEventListener() - Summary
+addEventListener() is a method in JavaScript used to attach event handlers to HTML elements. It allows you to specify what happens when a specific event (like a click, mouseover, keydown, etc.) occurs on an element.
+
+
+
+1. Mouse Events:
+click: Triggered when a mouse button is pressed and released on an element.
+dblclick: Triggered when a mouse button is clicked twice in quick succession.
+mousedown: Triggered when a mouse button is pressed down on an element.
+mouseup: Triggered when a mouse button is released on an element.
+mouseover: Triggered when the mouse pointer enters an element or one of its child elements.
+mouseenter: Triggered when the mouse pointer enters the element (not including its child elements).
+mouseout: Triggered when the mouse pointer leaves an element or one of its child elements.
+mouseleave: Triggered when the mouse pointer leaves the element (not including its child elements).
+mousemove: Triggered whenever the mouse moves within an element.
+contextmenu: Triggered when the right mouse button is clicked (to open the context menu).
