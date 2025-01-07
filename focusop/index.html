@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus Event Example</title>
+        <style>
+            input:focus {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h2>Focus Event Example</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </form>
+    
+        <script>
+            // Attach an event listener to the input element for the focus event
+            const inputElement = document.getElementById('name');
+            
+            inputElement.addEventListener('focus', function() {
+                console.log('Input field is focused!');
+            });
+
+            inputElement.addEventListener('blur', function() {
+    console.log("Element lost focus!");
+});
+        </script>
+    
+    </body>
+    </html>
+    
+
+
+    
+</body>
+</html>
