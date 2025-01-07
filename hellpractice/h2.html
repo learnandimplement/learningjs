@@ -1,0 +1,36 @@
+<!-- Swappping images -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <img id = "img1" src="../Resources/pexels-8moments-1183099.jpg" width="500px" height="500px" alt="">
+    <img id = "img2" src="../Resources/pexels-eberhard-grossgasteiger-1421903.jpg" width="500px" height="500px" alt="">
+
+    <button>Swap Images</button>
+
+
+
+    <script>
+
+        var img1 = document.getElementById('img1')
+        var img2 = document.getElementById('img2')
+
+        document.querySelector('button')
+        .addEventListener('click',()=>{
+            var temp = img1.src 
+            img1.src = img2.src
+            img2.src = temp
+        })
+
+
+
+    </script>
+
+</body>
+</html>
