@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+     <img src="../Resources/pexels-8moments-1183099.jpg"  id="img1" alt="" srcset="" width="20%" height="20%">
+
+     <img src="../Resources/pexels-eberhardgross-1367192.jpg"  alt="" srcset="" width="20%" height="20%">
+
+     <hr>
+
+     <button>Change images</button>
+
+
+
+
+
+    
+    <script>
+
+     var button  = document.querySelector('button');
+     var img1 = document.querySelector('img:nth-child(1)');
+     var img2 = document.querySelector('img:nth-child(2)');
+
+     
+
+     button.addEventListener('click',function(){
+         var temp = img1.src;
+         img1.src = img2.src;
+         img2.src = temp;
+     });
+
+    
+
+
+
+    </script>
+
+</body>
+</html>

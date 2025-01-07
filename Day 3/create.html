@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    
+    <script>
+
+      var h1 =  document.createElement('h1');
+      h1.textContent = "hello";
+      h1.style.color = "red";
+      document.querySelector('body').appendChild(h1)
+
+      var btn = document.createElement('button');
+      btn.textContent = "Click me";
+      btn.style = "color:tomato;border:1px solid black;border-radius:5px;padding:20px"
+      document.querySelector('body').append(btn)
+
+
+      
+
+      btn.addEventListener('click',()=>{
+        
+       
+         var img1 = document.createElement('img');
+        img1.src ="../../Resources/pexels-8moments-1183099.jpg"
+        img1.style.width = "50%"
+        img1.style.height = "50%"
+
+        document.querySelector('body').appendChild(img1)
+        console.log("hello")
+
+      })
+
+      
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="heading1">Hello Sainath</h1>
+      <h2 id="heading2">Good Morning</h2>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, autem
+        et. Mollitia asperiores odit perspiciatis, aperiam doloribus temporibus
+        nesciunt porro vitae, perferendis expedita cumque, laboriosam minus
+        beatae sit veniam unde!
+      </p>
+
+      <button id="btn">Click here</button>
+    </div>
+
+    <img
+      src="../Resources/pexels-eberhard-grossgasteiger-1421903.jpg"
+      id="img1"
+      alt="Image 1"
+      width="20%"
+      height="20%"
+    />
+    <img
+      src="../Resources/pexels-8moments-1183099.jpg"
+      id="img2"
+      alt="Image 2"
+      width="20%"
+      height="20%"
+    />
+
+    <script>
+      var img1 = document.getElementById("img1");
+      // var img2 = document.querySelector('img')
+      var img2 = document.getElementById("img2");
+      var heading = document.getElementById("heading1");
+
+      var heading2 = document.getElementById("heading2");
+
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        btn.textContent = "Downloading started";
+        btn.style =
+          "background-color:Tomato;color:white;padding:10px 20px;border:1px dashed black;border-radius:5px;";
+        heading.style =
+          "color:red;letter-spacing:10px;transition: letter-spacing 5s ease;";
+        var temp = img1.src;
+        img1.src = img2.src;
+        img2.src = temp;
+        console.log(temp);
+        heading2.style =
+          "color: tomato; transition: letter-spacing 5s ease-in";
+        heading2.style.fontFamily = "Gilroy, sans-serif"; // Change font-family
+        heading2.style.fontWeight = "bold";
+        heading2.style.fontSize = "16px"
+      });
+    </script>
+
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
