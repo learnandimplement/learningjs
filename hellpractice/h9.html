@@ -1,0 +1,35 @@
+<!-- Character Count -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+  <h3>Characters  :  <span id="count">0</span></h3>
+    <textarea name="text-area" id="tbox1" cols="30" rows="10"></textarea>
+
+
+    <script>
+
+        var textarea = document.getElementById("tbox1");
+
+        var count = document.getElementById("count");
+
+        textarea.addEventListener('input',function(){
+            
+            count.textContent = textarea.value.length;
+            
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

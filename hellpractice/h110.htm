@@ -1,0 +1,73 @@
+<!-- Scrollable effect -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #4caf50;
+    z-index: 1000;
+    transition: width 0.1s ease;
+}
+
+
+
+.content {
+    height: 2000px; /* Increase the height to make the page scrollable */
+    padding: 20px;
+}
+    </style>
+
+</head>
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="content">
+        <h1>Scroll Down</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget varius libero, in vehicula magna. 
+            <!-- Add more content here to make the page scrollable -->
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget varius libero, in vehicula magna. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget varius libero, in vehicula magna. 
+        </p>
+        <!-- Add more paragraphs for demo purposes -->
+    </div>
+
+
+
+    <script>
+
+        // Get the progress bar element
+const progressBar = document.getElementById('progressBar');
+
+// Listen for the scroll event
+window.addEventListener('scroll', () => {
+    // Calculate the scroll percentage
+    const scrollTop = window.scrollY; // Distance scrolled from the top
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+    // Set the width of the progress bar
+    progressBar.style.width = `${scrollPercent}%`;
+});
+
+        
+    </script>
+    
+</body>
+</html>
